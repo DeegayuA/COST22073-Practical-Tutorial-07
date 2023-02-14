@@ -1,0 +1,136 @@
+/* For all document css */
+:root{
+    --main-color: #ffffff;
+    --text-color: #c4c4c4;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/R2OM3BvN-Uo/1600x900');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: var(--main-color);
+}
+
+
+
+/* css for nav */
+nav{
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__link{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.logo{
+    transition: 0.2s ease-in-out;
+    padding: 0 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.logo:hover{
+    color: var(--main-color);
+}
+
+
+/* css for sections */
+.mar-top{
+    margin-top: 10rem;
+}
+.col{
+    flex-direction: column;
+}
+.blur{
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: max-content;
+    border-radius: 0.5rem;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    margin-bottom: 0 !important;
+    width: 80vw;
+    text-align: center;
+    font-size: 64px;
+    color: var(--main-color);
+}
+.body{
+    width: 80vw;
+    text-align: center;
+    font-size: 32px;
+    color: var(--main-color);
+}
+.text{
+    width: 80vw;
+    text-align: justify;
+    font-size: 24px;
+    color: var(--text-color);
+}
+.text2{
+    width: 30vw;
+    text-align: justify;
+    font-size: 24px;
+    color: var(--text-color);
+}
+footer{
+    margin-top: 5rem;
+    text-align: center;
+    width: 100vw;
+    color: var(--main-color);
+    background-color: black;
+    padding: 2rem;
+}
+
+input, textarea{
+    padding: 0.5rem 4rem;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .head{
+        font-size: 32px;
+    }
+    .body{
+        font-size: 16px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .text2{
+        font-size: 12px;
+    }
+}
